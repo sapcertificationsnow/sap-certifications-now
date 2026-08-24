@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sapcertificationsnow.github.io/sap-certifications-now/sitemap.xml
