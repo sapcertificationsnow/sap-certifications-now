@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0d2743">
+<title>SAP Spend Management Certification Guide (C_BCSPM) — The Definitive 30-Scenario Guide | SAP Certification Now</title>
+<meta name="description" content="The official study guide for the SAP Spend Management (C_BCSPM) Scenario-Based Assessment: the 5-Step Executive Framework, 13 C-Level value-lever profiles, the full SAP Spend Management solution map, and 30 fully solved executive scenarios.">
+<meta name="keywords" content="SAP Spend Management certification, SAP C_BCSPM exam, C_BCSPM_2502, SAP Scenario-Based Assessment, SBA exam guide, SAP Ariba certification, SAP Fieldglass certification, SAP Concur certification, how to pass SAP C_BCSPM, value levers, SAP CFO CPO stakeholder mapping, 5-Step Executive Framework">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sapcertificationsnow.github.io/sap-certifications-now/guide-30-scenarios-en.html">
+
+<meta property="og:site_name" content="SAP Certification Now">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="SAP Spend Management Certification Guide (C_BCSPM) — The Definitive 30-Scenario Guide | SAP Certification Now">
+<meta property="og:description" content="The official study guide for the SAP Spend Management (C_BCSPM) Scenario-Based Assessment: the 5-Step Executive Framework, 13 C-Level value-lever profiles, the full SAP Spend Management solution map, and 30 fully solved executive scenarios.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sapcertificationsnow.github.io/sap-certifications-now/guide-30-scenarios-en.html">
+<meta property="og:image" content="https://sapcertificationsnow.github.io/sap-certifications-now/og-image-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SAP Spend Management Certification Guide (C_BCSPM) — The Definitive 30-Scenario Guide | SAP Certification Now">
+<meta name="twitter:description" content="The official study guide for the SAP Spend Management (C_BCSPM) Scenario-Based Assessment: the 5-Step Executive Framework, 13 C-Level value-lever profiles, the full SAP Spend Management solution map, and 30 fully solved executive scenarios.">
+<meta name="twitter:image" content="https://sapcertificationsnow.github.io/sap-certifications-now/og-image-en.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "The Definitive Guide — SAP Spend Management Certification (30 Scenarios)",
+  "description": "The official study guide for the SAP Spend Management (C_BCSPM) Scenario-Based Assessment, built around the 5-Step Executive Framework, 13 C-Level value-lever profiles, and 30 fully solved executive scenarios.",
+  "brand": { "@type": "Brand", "name": "SAP Certification Now" },
+  "offers": {
+    "@type": "Offer",
+    "price": "99.00",
+    "priceCurrency": "GBP",
+    "availability": "https://schema.org/InStock",
+    "url": "https://payhip.com/b/o5km3"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --navy-deep:#050c17;
+    --navy:#0d2743;
+    --navy-mid:#0f3057;
+    --accent:#4fc8ff;
+    --accent-deep:#3fa3e8;
+    --ink:#14355c;
+    --paper:#f6f9fc;
+    --paper-card:#ffffff;
+    --muted:#5b7186;
+    --line:#dbe4ec;
+    --savings:#1f8a5f;
+    --savings-bg:#eaf7f1;
+    --font-display:'Poppins', 'Segoe UI', system-ui, sans-serif;
+    --font-body:'Inter', 'Segoe UI', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--font-body);
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+  .wrap-narrow{max-width:820px;margin:0 auto;padding:0 32px;}
+  a{color:inherit;}
+  h1,h2,h3{font-family:var(--font-display);text-wrap:balance;margin:0;}
+  p{margin:0;line-height:1.65;}
+  :focus-visible{outline:2px solid var(--accent-deep);outline-offset:3px;}
+
+  /* ---------- top bar ---------- */
+  .topbar{background:var(--navy-deep);padding:18px 0;}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
+  .brand-ring{
+    width:38px;height:38px;border-radius:50%;
+    border:1.5px solid var(--accent-deep);
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-family:var(--font-display);font-weight:700;font-size:13px;
+    flex-shrink:0;
+  }
+  .brand-word{color:#eef4f9;font-family:var(--font-display);font-weight:600;font-size:15px;letter-spacing:1.5px;}
+  .topnav{display:flex;gap:26px;font-size:14px;align-items:center;}
+  .topnav a{color:#a9bdd2;text-decoration:none;font-weight:500;}
+  .topnav a:hover{color:var(--accent);}
+  .topnav .btn-nav{
+    color:#eef4f9;border:1.5px solid rgba(150,190,225,0.4);padding:8px 16px;border-radius:7px;
+  }
+  .topnav .btn-nav:hover{border-color:var(--accent);color:var(--accent);}
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;
+    background:radial-gradient(circle at 22% 18%, var(--navy-mid) 0%, var(--navy) 42%, var(--navy-deep) 100%);
+    padding:76px 0 84px;
+    overflow:hidden;
+  }
+  .hero .stars{position:absolute;inset:0;}
+  .hero .star{position:absolute;width:3px;height:3px;border-radius:50%;background:rgba(150,195,235,0.4);}
+  .hero-inner{position:relative;z-index:1;max-width:780px;}
+  .breadcrumb{color:#7f96ac;font-size:13px;margin-bottom:22px;}
+  .breadcrumb a{color:#a9bdd2;text-decoration:none;}
+  .breadcrumb a:hover{color:var(--accent);}
+  .kicker{
+    color:var(--accent);font-family:var(--font-display);font-weight:600;
+    font-size:13px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px;
+  }
+  .hero h1{color:#f7fafc;font-size:46px;line-height:1.14;font-weight:700;letter-spacing:-0.3px;}
+  .hero h1 em{color:var(--accent);font-style:normal;}
+  .hero-sub{color:#c3d4e4;font-size:18px;font-weight:400;line-height:1.65;max-width:640px;margin-top:20px;}
+  .stat-row{display:flex;gap:0;margin-top:40px;border-top:1px solid rgba(150,190,225,0.22);padding-top:26px;flex-wrap:wrap;row-gap:18px;}
+  .stat{padding-right:36px;margin-right:36px;border-right:1px solid rgba(150,190,225,0.18);}
+  .stat:last-child{border-right:none;margin-right:0;padding-right:0;}
+  .stat b{display:block;color:#fff;font-family:var(--font-display);font-size:26px;font-weight:700;font-variant-numeric:tabular-nums;}
+  .stat span{color:#93a9bd;font-size:12.5px;letter-spacing:0.3px;}
+  .hero-ctas{display:flex;gap:16px;margin-top:38px;flex-wrap:wrap;align-items:center;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:var(--font-body);font-weight:600;font-size:15px;
+    padding:13px 26px;border-radius:8px;text-decoration:none;
+    transition:transform .15s ease, box-shadow .15s ease;
+    border:1.5px solid transparent;cursor:pointer;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-ghost-dark{color:#eaf3fa;border-color:rgba(150,190,225,0.4);}
+  .btn-ghost-dark:hover{border-color:var(--accent);color:var(--accent);}
+  .btn-accent{background:var(--accent-deep);color:#04121f;}
+  .btn-accent:hover{background:var(--accent);}
+  .price-note{color:#93a9bd;font-size:13px;}
+
+  /* ---------- section shell ---------- */
+  section{padding:76px 0;}
+  .section-head{max-width:680px;margin:0 auto 48px;text-align:center;}
+  .section-head.left{margin-left:0;text-align:left;}
+  .section-head .kicker{justify-content:center;}
+  .section-head.left .kicker{justify-content:flex-start;}
+  .section-head h2{font-size:31px;color:var(--ink);letter-spacing:-0.2px;}
+  .section-head p{color:var(--muted);font-size:16.5px;margin-top:14px;}
+  .alt-bg{background:#eef3f8;}
+
+  /* ---------- callout ---------- */
+  .callout{
+    background:#f4f8fc;border-left:4px solid var(--accent-deep);border-radius:0 10px 10px 0;
+    padding:24px 28px;margin:0 auto;max-width:820px;
+  }
+  .callout p{color:#2c4a6b;font-size:15.5px;line-height:1.7;}
+  .callout p + p{margin-top:12px;}
+  .callout strong{color:var(--ink);}
+  .callout.gold{border-left-color:#c98a1c;background:#fdf7ec;}
+  .callout.gold p{color:#5c4413;}
+
+  /* ---------- table of contents ---------- */
+  .toc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:900px;margin:0 auto;}
+  .toc-item{
+    display:flex;gap:16px;align-items:flex-start;background:var(--paper-card);
+    border:1px solid var(--line);border-radius:10px;padding:18px 20px;
+  }
+  .toc-num{
+    flex-shrink:0;width:32px;height:32px;border-radius:50%;background:var(--navy);color:var(--accent);
+    display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:13px;
+  }
+  .toc-item h4{font-size:15px;color:var(--ink);margin-bottom:4px;}
+  .toc-item p{font-size:13.5px;color:var(--muted);line-height:1.5;}
+
+  /* ---------- tables ---------- */
+  .table-scroll{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch;}
+  table.data{width:100%;border-collapse:collapse;min-width:640px;background:var(--paper-card);border-radius:10px;overflow:hidden;}
+  table.data caption{caption-side:top;text-align:left;font-size:13px;color:var(--muted);margin-bottom:10px;}
+  table.data th{
+    background:var(--navy);color:#eaf3fa;font-family:var(--font-display);font-weight:600;
+    font-size:12.5px;letter-spacing:0.4px;text-transform:uppercase;text-align:left;padding:13px 16px;
+  }
+  table.data td{padding:14px 16px;font-size:14px;color:#2c4a6b;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.55;}
+  table.data tr:last-child td{border-bottom:none;}
+  table.data tr:nth-child(even) td{background:#fafcfe;}
+  table.data td strong{color:var(--ink);}
+
+  /* ---------- persona / value-lever cards ---------- */
+  .persona-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;}
+  .persona-card{background:var(--paper-card);border:1px solid var(--line);border-radius:12px;padding:22px 24px;}
+  .persona-card h4{font-size:16px;color:var(--ink);margin-bottom:8px;}
+  .persona-card .cares{font-size:13.5px;color:var(--muted);line-height:1.55;margin-bottom:14px;}
+  .persona-card ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px;}
+  .persona-card li{font-size:13px;color:#365172;padding-left:18px;position:relative;line-height:1.45;}
+  .persona-card li::before{content:"";position:absolute;left:0;top:6px;width:6px;height:6px;border-radius:2px;background:var(--accent-deep);}
+
+  /* ---------- 5-step framework ---------- */
+  .step-list{display:flex;flex-direction:column;gap:14px;max-width:820px;margin:0 auto;}
+  .step-card{display:flex;gap:20px;background:var(--paper-card);border:1px solid var(--line);border-radius:12px;padding:22px 24px;}
+  .step-num{
+    flex-shrink:0;width:40px;height:40px;border-radius:50%;background:var(--navy);color:var(--accent);
+    display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:15px;
+  }
+  .step-card h4{font-size:15.5px;color:var(--ink);margin-bottom:6px;}
+  .step-card .goal{font-size:13.5px;color:var(--muted);margin-bottom:10px;}
+  .step-card .script{
+    font-size:14px;color:#2c4a6b;font-style:italic;background:#f4f8fc;border-radius:8px;padding:12px 14px;
+    border-left:3px solid var(--accent-deep);
+  }
+
+  /* ---------- scenario walkthrough ---------- */
+  .scenario{background:var(--paper-card);border:1px solid var(--line);border-radius:14px;padding:30px 32px;margin-bottom:24px;}
+  .scenario-tag{color:var(--accent-deep);font-family:var(--font-display);font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px;}
+  .scenario h3{font-size:19px;color:var(--ink);margin-bottom:14px;}
+  .scenario .context{font-size:14.5px;color:#2c4a6b;line-height:1.65;margin-bottom:14px;}
+  .scenario .question{
+    font-size:14.5px;color:var(--ink);font-weight:600;background:#eef3f8;border-radius:8px;padding:14px 16px;margin-bottom:18px;
+  }
+  .scenario .question span{display:block;font-size:11px;color:var(--muted);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;}
+  .script-steps{display:flex;flex-direction:column;gap:10px;}
+  .script-step{display:flex;gap:14px;font-size:14px;color:#2c4a6b;line-height:1.6;}
+  .script-step b{
+    flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--navy);color:var(--accent);
+    display:flex;align-items:center;justify-content:center;font-size:11px;font-family:var(--font-display);font-weight:700;
+  }
+
+  /* ---------- number / stat highlight row ---------- */
+  .number-band{background:var(--navy-deep);border-radius:16px;padding:36px 40px;}
+  .number-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;}
+  .number-item{flex:1;min-width:130px;text-align:center;}
+  .number-item b{display:block;color:var(--accent);font-family:var(--font-display);font-size:32px;font-weight:700;}
+  .number-item span{color:#9db2c6;font-size:12.5px;letter-spacing:0.3px;display:block;margin-top:6px;line-height:1.4;}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:10px;}
+  .faq-item{background:var(--paper-card);border:1px solid var(--line);border-radius:10px;padding:4px 22px;}
+  .faq-item summary{
+    font-family:var(--font-display);font-weight:600;font-size:15px;color:var(--ink);
+    padding:16px 0;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{content:"+";font-size:20px;color:var(--accent-deep);flex-shrink:0;}
+  .faq-item[open] summary::after{content:"\2212";}
+  .faq-item p{font-size:14.5px;color:var(--muted);line-height:1.65;padding-bottom:18px;}
+
+  /* ---------- cross-link cards ---------- */
+  .crosslinks{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+  .crosslink-card{
+    display:block;text-decoration:none;background:var(--paper-card);border:1px solid var(--line);border-radius:12px;
+    padding:22px 24px;transition:border-color .15s ease, transform .15s ease;
+  }
+  .crosslink-card:hover{border-color:var(--accent-deep);transform:translateY(-2px);}
+  .crosslink-card .ck-kicker{color:var(--accent-deep);font-family:var(--font-display);font-weight:600;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;}
+  .crosslink-card h4{font-size:15.5px;color:var(--ink);margin-bottom:8px;}
+  .crosslink-card p{font-size:13.5px;color:var(--muted);line-height:1.5;}
+  .crosslink-card .ck-arrow{color:var(--accent-deep);font-size:13px;font-weight:600;margin-top:12px;display:inline-block;}
+
+  /* ---------- CTA band ---------- */
+  .cta-band{background:var(--navy-deep);border-radius:20px;padding:52px 48px;text-align:center;}
+  .cta-band h2{color:#f7fafc;font-size:28px;margin-bottom:12px;}
+  .cta-band p{color:#9db2c6;font-size:15.5px;max-width:520px;margin:0 auto 28px;}
+  .cta-price{font-family:var(--font-display);font-weight:700;font-size:38px;color:#fff;margin-bottom:6px;}
+  .cta-price sup{font-size:17px;top:-15px;position:relative;font-weight:600;}
+
+  /* ---------- trust / footer ---------- */
+  .trust{padding:48px 0;text-align:center;}
+  .trust p{color:var(--muted);font-size:14.5px;max-width:680px;margin:0 auto;}
+  .trust strong{color:var(--ink);}
+  footer{background:var(--navy-deep);padding:44px 0;}
+  .footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;}
+  .footer-row .brand-word{color:#c7d6e5;}
+  footer .keywords{color:#5b7186;font-size:12px;line-height:1.7;max-width:560px;}
+  footer .copyright{color:#5b7186;font-size:12.5px;}
+  footer .footlinks{display:flex;gap:18px;font-size:13px;margin-top:14px;}
+  footer .footlinks a{color:#7f96ac;text-decoration:none;}
+  footer .footlinks a:hover{color:var(--accent);}
+
+  @media (max-width:900px){
+    .cards{grid-template-columns:1fr;}
+    .toc-grid{grid-template-columns:1fr;}
+    .hero h1{font-size:34px;}
+    .stat{padding-right:22px;margin-right:22px;}
+    .cta-band{padding:40px 26px;}
+  }
+  @media (max-width:560px){
+    .wrap,.wrap-narrow{padding:0 20px;}
+    .stat{width:42%;border-right:none;padding-right:0;margin-right:0;}
+    .topnav{display:none;}
+  }
+
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="https://sapcertificationsnow.github.io/sap-certifications-now/index-en.html">
+      <span class="brand-ring">SCN</span>
+      <span class="brand-word">SAP CERTIFICATION NOW</span>
+    </a>
+    <nav class="topnav">
+      <a href="https://sapcertificationsnow.github.io/sap-certifications-now/index-en.html">Compare All 3</a>
+      <a href="https://sapcertificationsnow.github.io/sap-certifications-now/guide-30-scenarios-en.html" style="color:var(--accent);">30 Scenarios</a>
+      <a href="https://sapcertificationsnow.github.io/sap-certifications-now/additional-scenarios-en.html">Additional Scenarios</a>
+      <a href="https://sapcertificationsnow.github.io/sap-certifications-now/autonomous-enterprise-spend-en.html">Autonomous Enterprise</a>
+    </nav>
+  </div>
+</div>
+
+
+<header class="hero" id="top">
+  <div class="stars" id="stars"></div>
+  <div class="wrap hero-inner">
+    <div class="breadcrumb"><a href="https://sapcertificationsnow.github.io/sap-certifications-now/index-en.html">All Guides</a> / The Definitive Guide</div>
+    <div class="kicker">Official Study Guide &middot; C_BCSPM</div>
+    <h1>Stop Studying Features.<br>Start Thinking Like a <em>Trusted Advisor</em>.</h1>
+    <p class="hero-sub">
+      SAP's modern certification abandoned pure technical recall for "Consultative Business Acumen."
+      In the C_BCSPM Scenario-Based Assessment, the question is never "which button do I click" — it's
+      which business pain is really happening, what's its root cause, which part of the SAP portfolio solves
+      it, and how you'd justify that investment to a CFO. This guide is built entirely around that shift.
+    </p>
+    <div class="stat-row">
+      <div class="stat"><b>8</b><span>Chapters, start to finish</span></div>
+      <div class="stat"><b>30</b><span>Fully solved executive scenarios</span></div>
+      <div class="stat"><b>13</b><span>C-Level personas &amp; value levers</span></div>
+      <div class="stat"><b>60%</b><span>Cut score to beat</span></div>
+    </div>
+    <div class="hero-ctas">
+      <a class="btn btn-accent" href="https://payhip.com/b/o5km3">Get the Definitive Guide &mdash; &pound;99</a>
+      <a class="btn btn-ghost-dark" href="#chapters">See what's inside</a>
+    </div>
+    <p class="price-note">One-time purchase &middot; instant digital access &middot; pairs with the Additional Scenarios and Autonomous Enterprise guides</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap-narrow">
+    <div class="callout">
+      <p><strong>The paradigm shift behind this exam:</strong> SAP's certification model no longer rewards memorizing configuration screens. In the C_BCSPM exam and in real executive simulations, the AI evaluator plays the role of a CFO, CPO, or CIO who states a business problem &mdash; and the candidate is scored on whether they can name the real root cause, position the right solution, and translate it into value the sponsor actually cares about.</p>
+      <p>That's the entire premise of this guide: every chapter, framework, and scenario exists to make that translation automatic.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt-bg" id="chapters">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">What You'll Master</div>
+      <h2>Eight Chapters, One Complete Path to the Exam</h2>
+      <p>Structured to build from how the assessment works, to why it works that way, to full command of every scenario type it can throw at you.</p>
+    </div>
+    <div class="toc-grid">
+      <div class="toc-item"><div class="toc-num">1</div><div><h4>The SBA Exam, Decoded</h4><p>How the AI-driven conversational assessment actually runs &mdash; pacing, the 3-second pause rule, restarting an answer, and the submission trap that fails candidates who run out of time.</p></div></div>
+      <div class="toc-item"><div class="toc-num">2</div><div><h4>C_BCSPM vs. the Traditional Certifications</h4><p>How this "positioning" exam compares to the classic Ariba Sourcing, Contracts, Procurement and SLP associate certifications &mdash; format, duration, and cut score, side by side.</p></div></div>
+      <div class="toc-item"><div class="toc-num">3</div><div><h4>The 5-Step Executive Framework</h4><p>The response architecture that turns any scenario into a structured, consultative answer &mdash; root cause, business impact, solution, value translation, prioritization.</p></div></div>
+      <div class="toc-item"><div class="toc-num">4</div><div><h4>C-Level Stakeholders &amp; Their Value Levers</h4><p>13 executive and operational personas, what each one actually cares about, and the exact value levers that make your answer land with the right sponsor.</p></div></div>
+      <div class="toc-item"><div class="toc-num">5</div><div><h4>The SAP Spend Management Portfolio</h4><p>Every solution in the suite &mdash; Ariba, Fieldglass, Concur, Business Network, Business AI &mdash; mapped to the specific value levers it unlocks.</p></div></div>
+      <div class="toc-item"><div class="toc-num">6</div><div><h4>Masterclass: 30 Executive Scenarios</h4><p>Full case studies with company context, the exact question asked, and a complete 5-step model answer &mdash; the core of the guide.</p></div></div>
+      <div class="toc-item"><div class="toc-num">7</div><div><h4>Cheat Sheet &amp; Rapid Decision Matrix</h4><p>Every scenario compressed into a symptom &rarr; root cause &rarr; solution table for last-minute review before the exam.</p></div></div>
+      <div class="toc-item"><div class="toc-num">8</div><div><h4>Exam Strategy &amp; Time Management</h4><p>Pacing math for 25 questions in 120 minutes, the human-in-the-loop principle SAP grades you on, and official sources for ongoing study.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">The Exam, Decoded</div>
+      <h2>How C_BCSPM Compares to the Classic Certifications</h2>
+      <p>C_BCSPM isn't a deeper functional exam &mdash; it's a different kind of exam entirely. Here's how it stacks up against the certifications most Spend Management consultants already hold.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="data">
+        <thead>
+          <tr><th>Certification</th><th>Primary Focus</th><th>Format</th><th>Cut Score</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Positioning SAP Business Suite via Spend Management (C_BCSPM)</strong></td><td>Business scenarios, executive positioning, Business AI, BTP, sustainability, consultative value</td><td>25 questions &middot; 2 hours (~4.8 min/question)</td><td>60%</td></tr>
+          <tr><td>SAP Certified Associate &mdash; SAP Ariba Contracts</td><td>Contract governance, templates, clauses, approval flows</td><td>80 questions &middot; 3 hours</td><td>68%</td></tr>
+          <tr><td>SAP Certified Associate &mdash; SAP Ariba Sourcing</td><td>RFI/RFP events, e-auctions, bidding rules, cost optimization</td><td>80 questions &middot; 3 hours</td><td>60%</td></tr>
+          <tr><td>SAP Certified Associate &mdash; SAP Ariba Procurement</td><td>Requisitions, purchase orders, catalogs, Guided Buying, P2P automation</td><td>80 questions &middot; 3 hours</td><td>63%</td></tr>
+          <tr><td>SAP Certified Associate &mdash; SAP Ariba Supplier Management (SLP)</td><td>Supplier lifecycle, onboarding, qualification, segmentation, risk matrix</td><td>80 questions &middot; 3 hours</td><td>61%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="alt-bg">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Chapter 3</div>
+      <h2>The 5-Step Executive Framework</h2>
+      <p>The response architecture behind every scenario in this guide &mdash; and the one habit that separates a technically-correct answer from one that sounds like a trusted advisor.</p>
+    </div>
+    <div class="step-list">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <div><h4>Name the Root Cause</h4><p class="goal">Separate the surface-level symptom from the real structural problem.</p><p class="script">"The core issue isn't simply [surface problem] &mdash; it's [the underlying root cause]."</p></div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <div><h4>Explain the Business Impact</h4><p class="goal">Show why the root cause creates real, tangible risk or cost.</p><p class="script">"Because of [current manual process / missing system], the organization is exposed to [risk / cost / inefficiency / lack of visibility]."</p></div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <div><h4>Position the Solution</h4><p class="goal">Recommend the right SAP solution with architectural precision, no jargon overload.</p><p class="script">"I'd recommend prioritizing [SAP solution] because it enables [capability / control / standardization] across [scope / organization]."</p></div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <div><h4>Translate Into Value Levers</h4><p class="goal">Convert the capability into the measurable outcome your sponsor actually cares about.</p><p class="script">"For the [CFO / CPO / CIO / HR sponsor], this means [measurable outcome: savings, compliance, risk reduction, productivity]."</p></div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">5</div>
+        <div><h4>Justify the Priority</h4><p class="goal">Explain why this investment should come first, before other initiatives.</p><p class="script">"I'd prioritize this first because [reason it unlocks value, builds the foundation, or reduces risk before other initiatives]."</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="value-levers">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Chapter 4 &middot; The Heart of This Guide</div>
+      <h2>Speak the Language of Every Stakeholder</h2>
+      <p>Presenting the right solution to the wrong sponsor &mdash; in the wrong language &mdash; is the single biggest reason candidates lose points on the SBA, and lose deals in real life. Chapter 4 maps all 13 stakeholders to what they actually care about and the value levers that move them.</p>
+    </div>
+
+    <div class="persona-grid">
+      <div class="persona-card">
+        <h4>CFO &mdash; Chief Financial Officer</h4>
+        <p class="cares">Cost reduction, cash flow optimization, working capital, financial governance, real-time spend visibility, budget predictability.</p>
+        <ul>
+          <li>Cost reduction with direct EBITDA impact</li>
+          <li>Working capital optimization &amp; release</li>
+          <li>Cash flow optimization &amp; predictability</li>
+          <li>Rigorous financial controls &amp; audit compliance</li>
+        </ul>
+      </div>
+      <div class="persona-card">
+        <h4>CPO &mdash; Chief Procurement Officer</h4>
+        <p class="cares">Spend under management, delivered savings, procurement efficiency, supplier risk mitigation, supplier performance and innovation.</p>
+        <ul>
+          <li>% increase in spend under management</li>
+          <li>Realized (not just identified) savings</li>
+          <li>Procurement team efficiency &amp; productivity</li>
+          <li>Proactive supplier risk mitigation</li>
+        </ul>
+      </div>
+      <div class="persona-card">
+        <h4>CIO / CTO</h4>
+        <p class="cares">Architecture simplification, fewer legacy systems, eliminating manual integrations, master data consistency, security, user adoption.</p>
+        <ul>
+          <li>Simplified enterprise technology architecture</li>
+          <li>Native, standardized integration with S/4HANA</li>
+          <li>Single source of truth for master data</li>
+          <li>Lower total cost of ownership (TCO)</li>
+        </ul>
+      </div>
+      <div class="persona-card">
+        <h4>CHRO / Workforce Lead</h4>
+        <p class="cares">Full visibility into external workforce, labor-law compliance, standardized onboarding/offboarding, access to specialized talent.</p>
+        <ul>
+          <li>Real-time visibility of the external workforce</li>
+          <li>Full worker lifecycle &amp; standardized onboarding</li>
+          <li>Rigorous labor &amp; union compliance</li>
+          <li>Mitigation of misclassification &amp; legal risk</li>
+        </ul>
+      </div>
+      <div class="persona-card">
+        <h4>CSCO / Supply Chain Leader</h4>
+        <p class="cares">Supply chain resilience, continuity of supply, real-time digital collaboration with suppliers, network visibility, inventory optimization.</p>
+        <ul>
+          <li>Operational resilience of the supply chain</li>
+          <li>Real-time collaboration on the supplier network</li>
+          <li>Full traceability of orders in transit</li>
+          <li>Optimized inventory &amp; fewer stockouts</li>
+        </ul>
+      </div>
+      <div class="persona-card">
+        <h4>CRO / Legal &amp; Risk</h4>
+        <p class="cares">Third-party risk management, regulatory compliance, contract compliance, eliminating value leakage, continuous audit.</p>
+        <ul>
+          <li>End-to-end third-party &amp; extended-chain risk management</li>
+          <li>Continuous regulatory, legal &amp; tax compliance</li>
+          <li>Enforcement of negotiated contract terms</li>
+          <li>Predictive risk monitoring &amp; alerts</li>
+        </ul>
+      </div>
+      <div class="persona-card">
+        <h4>CSO &mdash; Sustainability Officer</h4>
+        <p class="cares">ESG targets, decarbonization, sustainable sourcing (Scope 3), ethical compliance in the supply chain, investor-grade transparency.</p>
+        <ul>
+          <li>ESG scoring &amp; compliance audit of partners</li>
+          <li>Sustainable sourcing &amp; decarbonization programs</li>
+          <li>Scope 3 emissions tracking &amp; reduction</li>
+          <li>Ethical, transparent supply chains</li>
+        </ul>
+      </div>
+      <div class="persona-card">
+        <h4>COO &mdash; Chief Operating Officer</h4>
+        <p class="cares">Business continuity, cross-functional operating efficiency, removing production bottlenecks, agile collaboration between teams.</p>
+        <ul>
+          <li>Process efficiency &amp; increased production capacity</li>
+          <li>Uninterrupted continuity of supply for operations</li>
+          <li>Operational agility against volatility</li>
+          <li>Friction-free alignment across procurement, stock &amp; plant</li>
+        </ul>
+      </div>
+      <div class="persona-card">
+        <h4>Category Manager</h4>
+        <p class="cares">Identifying new savings opportunities, market intelligence, category strategy, segmented spend analysis, goal tracking.</p>
+        <ul>
+          <li>Fact-based, data-driven category plans</li>
+          <li>Granular, multi-dimensional spend visibility</li>
+          <li>Continuous performance &amp; SLA tracking</li>
+          <li>Competitive market intelligence &amp; price benchmarks</li>
+        </ul>
+      </div>
+      <div class="persona-card">
+        <h4>Sourcing Manager</h4>
+        <p class="cares">Faster sourcing cycles, more supplier competition via e-auctions, negotiation leverage, capturing negotiated savings.</p>
+        <ul>
+          <li>Dramatic reduction in sourcing cycle time</li>
+          <li>Increased price competition via reverse e-auctions</li>
+          <li>Stronger negotiation leverage</li>
+          <li>Real capture of contracted savings at PO level</li>
+        </ul>
+      </div>
+      <div class="persona-card">
+        <h4>Supplier Manager</h4>
+        <p class="cares">Fast self-service onboarding, master-data quality, continuous performance evaluation (scorecards), supplier development.</p>
+        <ul>
+          <li>Fast digital onboarding &amp; qualification</li>
+          <li>Self-service master &amp; banking data upkeep</li>
+          <li>Structured periodic performance scorecards</li>
+          <li>Joint development of key supplier relationships</li>
+        </ul>
+      </div>
+      <div class="persona-card">
+        <h4>AP Manager</h4>
+        <p class="cares">Touchless invoice processing, fewer exceptions and rework, automated 3-way match, on-time payments.</p>
+        <ul>
+          <li>Touchless invoice processing automation</li>
+          <li>Drastic reduction of exceptions &amp; manual errors</li>
+          <li>Lower processing cost per invoice received</li>
+          <li>Automated 3-way match (order, receipt, invoice)</li>
+        </ul>
+      </div>
+      <div class="persona-card">
+        <h4>Requester / Internal Employee</h4>
+        <p class="cares">Consumer-grade buying experience, fast mobile approvals, easy access to preferred suppliers, less administrative burden.</p>
+        <ul>
+          <li>Intuitive, consumer-style buying experience</li>
+          <li>Fast mobile approvals &amp; guided buying</li>
+          <li>Easy access to pre-negotiated catalogs</li>
+          <li>Elimination of admin burden &amp; rework</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt-bg">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Chapter 5</div>
+      <h2>The SAP Spend Management Portfolio, Mapped to Value</h2>
+      <p>SAP's real differentiator is a Source-to-Pay architecture fully connected to S/4HANA &mdash; no custom middleware, one unified view of spend. Here's every solution in the portfolio and the value levers it unlocks.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="data">
+        <thead><tr><th>SAP Solution</th><th>Core Capability</th><th>Key Value Levers</th></tr></thead>
+        <tbody>
+          <tr><td><strong>SAP Ariba Strategic Sourcing</strong></td><td>RFI/RFP event management, advanced reverse auctions, direct &amp; indirect cost modeling</td><td>Savings generation &middot; supplier competition &middot; shorter sourcing cycles &middot; standardized negotiation</td></tr>
+          <tr><td><strong>SAP Ariba Contracts</strong></td><td>Central contract repository, full lifecycle management, legal clause library, compliance monitoring</td><td>Contract compliance &amp; audit &middot; eliminated value leakage &middot; renewal visibility &middot; captured negotiated pricing</td></tr>
+          <tr><td><strong>SAP Ariba Buying &amp; Invoicing</strong></td><td>Guided Buying, catalog experience, invoice-to-pay automation</td><td>More spend under management &middot; eliminated maverick spend &middot; touchless invoicing &middot; faster P2P cycle</td></tr>
+          <tr><td><strong>SAP Ariba Supplier Lifecycle &amp; Performance</strong></td><td>Full supplier governance from self-registration to continuous performance scorecards</td><td>Faster standardized onboarding &middot; self-service supplier data &middot; S/4HANA data integrity &middot; structured scorecards</td></tr>
+          <tr><td><strong>SAP Ariba Supplier Risk</strong></td><td>Real-time monitoring of operational, financial, legal, reputational &amp; sustainability risk</td><td>Lower supplier disruption exposure &middot; continuous due diligence &middot; predictive alerts &middot; supply resilience</td></tr>
+          <tr><td><strong>SAP Spend Control Tower / Category Management</strong></td><td>Deep visibility &amp; categorization of enterprise spend data</td><td>Consolidated multi-BU spend visibility &middot; fact-based savings identification &middot; data-driven category plans</td></tr>
+          <tr><td><strong>SAP Fieldglass</strong></td><td>End-to-end external workforce &amp; SOW services management</td><td>Full cost control on contingent labor &middot; workforce visibility &middot; standardized onboarding &middot; labor-risk mitigation</td></tr>
+          <tr><td><strong>SAP Concur</strong></td><td>Automated travel, expense &amp; invoice control with policy enforcement</td><td>Travel policy compliance &middot; eliminated manual expense reporting &middot; pre/post-trip visibility &middot; employee productivity</td></tr>
+          <tr><td><strong>SAP Business Network</strong></td><td>The world's largest collaborative B2B commerce network</td><td>Digital order/invoice automation &middot; fewer billing disputes &middot; full delivery traceability &middot; stronger partner collaboration</td></tr>
+          <tr><td><strong>SAP Business AI &amp; Joule</strong></td><td>Native AI embedded in procurement &amp; finance processes with intelligent copilots</td><td>Exponential productivity gains &middot; intelligent supplier/contract recommendations &middot; automated reconciliation</td></tr>
+          <tr><td><strong>SAP Integration Suite / Business Suite (S/4HANA)</strong></td><td>Native integration layer uniting procurement, inventory, finance &amp; HR without third-party middleware</td><td>Simplified architecture &middot; consistent master data &middot; lower TCO &middot; friction-free Source-to-Pay</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="masterclass">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Chapter 6 &middot; Masterclass</div>
+      <h2>Inside the 30 Executive Scenarios</h2>
+      <p>Every scenario follows the same anatomy: company context, the exact question an AI evaluator (or a real client) would ask, and a complete 5-step model answer. Here are two, in full.</p>
+    </div>
+
+    <div class="scenario">
+      <div class="scenario-tag">Scenario 1 &middot; External Workforce Governance</div>
+      <h3>"We already have consolidated purchasing processes in our ERP."</h3>
+      <p class="context"><strong>Company context:</strong> A global manufacturer already runs SAP S/4HANA. Over the past few years the company sharply increased its use of contractors and engineering consultants, each region managing them in isolation. The CFO has flagged a lack of global cost visibility, and recent audits found inconsistent onboarding processes.</p>
+      <div class="question"><span>Question from the CPO</span>"We already have consolidated purchasing processes in the ERP. Why should we invest in another SAP solution?"</div>
+      <div class="script-steps">
+        <div class="script-step"><b>1</b>"What you're describing isn't a gap in materials procurement &mdash; it's the absence of corporate governance over your external workforce. As contractor and consultant usage grew, the organization lost control, standardization, and compliance at the global level."</div>
+        <div class="script-step"><b>2</b>"Because contractors are hired regionally through disconnected spreadsheets and emails, the company is highly exposed to labor liabilities, no financial control over rates, and security gaps around who has access to facilities and systems."</div>
+        <div class="script-step"><b>3</b>"I'd recommend prioritizing SAP Fieldglass, since it establishes one standardized digital process to request, qualify, manage, and offboard external workers across every region and business unit."</div>
+        <div class="script-step"><b>4</b>"For the CPO and CFO, this delivers 100% cost visibility, guarantees negotiated rate compliance, ensures regulatory compliance before work even begins, and drastically cuts operational and legal risk."</div>
+        <div class="script-step"><b>5</b>"I'd prioritize this first because containing labor risk and contractor spend generates immediate savings and compliance protection that your ERP alone was never designed to govern."</div>
+      </div>
+    </div>
+
+    <div class="scenario">
+      <div class="scenario-tag">Scenario 4 &middot; The "We Need AI Now" Trap</div>
+      <h3>"Should we invest in AI for procurement right now?"</h3>
+      <p class="context"><strong>Company context:</strong> A consumer goods company runs S/4HANA, Ariba Buying and Sourcing. The board is pushing an urgent AI strategy for procurement &mdash; but supplier records are still manual, processes vary by site, and analysts spend weeks cleaning spreadsheets before any executive report.</p>
+      <div class="question"><span>Question from the CFO</span>"Should we start investing in advanced AI for procurement now, or focus on another priority first?"</div>
+      <div class="script-steps">
+        <div class="script-step"><b>1</b>"This isn't a lack of AI technology or appetite &mdash; the real issue is that the organization doesn't yet have the reliable, structured data foundation that AI requires to generate real value."</div>
+        <div class="script-step"><b>2</b>"Applying AI algorithms to incomplete, inconsistent, manually-maintained master data will only accelerate wrong conclusions and produce unreliable predictive recommendations."</div>
+        <div class="script-step"><b>3</b>"I'd recommend first structuring data governance with SAP Ariba SLP and standardizing procurement workflows, while designing in parallel the activation roadmap for SAP Business AI powered by Joule."</div>
+        <div class="script-step"><b>4</b>"For the CFO and the board, this ensures the approved budget delivers auditable, trustworthy data today &mdash; the indispensable prerequisite for AI automation and recommendations to generate ROI tomorrow."</div>
+        <div class="script-step"><b>5</b>"Fixing the root cause of poor data quality should be priority number one. Data readiness is the non-negotiable foundation that makes any AI investment sustainable."</div>
+      </div>
+    </div>
+
+    <p style="text-align:center;color:var(--muted);font-size:15px;">27 more scenarios inside &mdash; covering supplier governance, M&amp;A supplier proliferation, ESG board pressure, B2B network connectivity, cost-reduction mandates, and more &mdash; plus a compiled decision matrix of all 30.</p>
+  </div>
+</section>
+
+<section class="alt-bg">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Chapter 7 Preview</div>
+      <h2>The Cheat Sheet: Symptom &rarr; Root Cause &rarr; Solution</h2>
+      <p>Your pocket reference for last-minute review before the exam, or before a client meeting.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="data">
+        <thead><tr><th>What the Client Says</th><th>The Real Root Cause</th><th>SAP Solution</th></tr></thead>
+        <tbody>
+          <tr><td>"We need AI in procurement now."</td><td>No reliable data foundation or standardized processes for AI to add value.</td><td>SAP Ariba SLP / Spend Analytics &rarr; SAP Business AI</td></tr>
+          <tr><td>"We already have suppliers registered in S/4HANA."</td><td>Master records exist in the ERP, but lifecycle governance and risk qualification are missing.</td><td>SAP Ariba SLP + Supplier Risk</td></tr>
+          <tr><td>"Our travel expenses are too high."</td><td>No automatic policy enforcement, pre-trip approval, or expense visibility.</td><td>SAP Concur Travel &amp; Expense</td></tr>
+          <tr><td>"Our suppliers aren't aligned with us."</td><td>Fragile buyer-supplier communication and no shared order/invoice visibility.</td><td>SAP Business Network</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap-narrow">
+    <div class="section-head">
+      <div class="kicker">FAQ</div>
+      <h2>Before You Buy</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item"><summary>Is this an official SAP publication?</summary><p>No &mdash; this is an independent study guide created by SAP Certification Now, built from the exam's published blueprint, official comparison data, and real scenario patterns. It is not affiliated with or endorsed by SAP.</p></details>
+      <details class="faq-item"><summary>Do I need hands-on Ariba, Fieldglass, or Concur experience?</summary><p>It helps, but it isn't required. The guide is built around business reasoning and the 5-Step Framework first &mdash; the specific SAP solution names are taught alongside each scenario, not assumed as prior knowledge.</p></details>
+      <details class="faq-item"><summary>What format is the guide delivered in?</summary><p>A digital eBook (DOCX/PDF-style layout) you can read on any device, with executive tables, scenario cards, and a printable cheat sheet.</p></details>
+      <details class="faq-item"><summary>How is this different from the Additional Scenarios guide?</summary><p>This is the foundational guide &mdash; the framework, the stakeholder map, the portfolio, and the first 30 scenarios. <a href="https://sapcertificationsnow.github.io/sap-certifications-now/additional-scenarios-en.html">Additional Scenarios 31&ndash;100</a> is a pure practice extension using the exact same method, for candidates who want more reps before sitting the exam.</p></details>
+      <details class="faq-item"><summary>Should I get this or the Autonomous Enterprise &amp; Spend guide?</summary><p>They cover different exam content. This guide targets the classic C_BCSPM functional scenario format (Ariba/Fieldglass/Concur). <a href="https://sapcertificationsnow.github.io/sap-certifications-now/autonomous-enterprise-spend-en.html">Autonomous Enterprise &amp; Spend</a> is built from real transcripts of the newer AI-conversation exam format. Many candidates get both &mdash; see the <a href="https://sapcertificationsnow.github.io/sap-certifications-now/index-en.html#bundle">bundle</a>.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="alt-bg">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Ready to Think Like a Trusted Advisor?</h2>
+      <p>8 chapters, 30 scenarios, 13 stakeholder profiles, and the framework behind every one of them.</p>
+      <div class="cta-price"><sup>&pound;</sup>99</div>
+      <a class="btn btn-accent" href="https://payhip.com/b/o5km3">Get the Definitive Guide</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Keep Going</div>
+      <h2>Pair It With</h2>
+    </div>
+    <div class="crosslinks">
+      <a class="crosslink-card" href="https://sapcertificationsnow.github.io/sap-certifications-now/additional-scenarios-en.html">
+        <div class="ck-kicker">Extended Practice</div>
+        <h4>Additional Scenarios 31&ndash;100</h4>
+        <p>70 more fully solved scenarios in the same format, for maximum pattern repetition before the exam.</p>
+        <span class="ck-arrow">See the guide &rarr;</span>
+      </a>
+      <a class="crosslink-card" href="https://sapcertificationsnow.github.io/sap-certifications-now/autonomous-enterprise-spend-en.html">
+        <div class="ck-kicker">Based on the Real Exam</div>
+        <h4>Autonomous Enterprise &amp; Spend</h4>
+        <p>21 real exam questions from actual C_BCSBS / C_BCSPM attempts, with model answers built from evaluator feedback.</p>
+        <span class="ck-arrow">See the guide &rarr;</span>
+      </a>
+      <a class="crosslink-card" href="https://sapcertificationsnow.github.io/sap-certifications-now/index-en.html#bundle">
+        <div class="ck-kicker">Buy Together, Save 30%</div>
+        <h4>The Complete Certification Bundle</h4>
+        <p>All three guides for &pound;194 &mdash; &pound;83 less than buying separately.</p>
+        <span class="ck-arrow">See the bundle &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-row">
+      <a class="brand" href="https://sapcertificationsnow.github.io/sap-certifications-now/index-en.html">
+        <span class="brand-ring">SCN</span>
+        <span class="brand-word">SAP CERTIFICATION NOW</span>
+      </a>
+      <p class="keywords">Relevant for candidates preparing for C_BCSPM, C_BCSBS, C_BCFIN, C_BCSBN, C_BCSCX, C_BCSSS, C_BCBTP, C_BCBDC and C_BCBTM — the full "Positioning SAP Business Suite" certification family.</p>
+    </div>
+    <div class="footlinks">
+      <a href="https://sapcertificationsnow.github.io/sap-certifications-now/index-en.html">Compare all 3 guides</a>
+      <a href="https://sapcertificationsnow.github.io/sap-certifications-now/guide-30-scenarios-en.html">Definitive Guide</a>
+      <a href="https://sapcertificationsnow.github.io/sap-certifications-now/additional-scenarios-en.html">Additional Scenarios</a>
+      <a href="https://sapcertificationsnow.github.io/sap-certifications-now/autonomous-enterprise-spend-en.html">Autonomous Enterprise &amp; Spend</a>
+    </div>
+    <p class="copyright" style="margin-top:18px;">© 2026 SAP Certification Now. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  var field = document.getElementById('stars');
+  if (field) {
+    var rand = function(a,b){ return Math.random()*(b-a)+a; };
+    for (var i=0;i<50;i++){
+      var s = document.createElement('div');
+      s.className = 'star';
+      s.style.left = rand(0,100)+'%';
+      s.style.top = rand(0,100)+'%';
+      s.style.opacity = rand(0.15,0.55);
+      field.appendChild(s);
+    }
+  }
+</script>
+</body>
+</html>
+
