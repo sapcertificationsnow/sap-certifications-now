@@ -334,6 +334,23 @@
   footer .keywords{color:#5b7186;font-size:12px;line-height:1.7;max-width:560px;}
   footer .copyright{color:#5b7186;font-size:12.5px;}
 
+
+  /* ---- What readers say (only shown when real testimonials exist) ---- */
+  .readers-section{background:var(--paper);}
+  .reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;}
+  .review{background:var(--paper-card);border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:16px;}
+  .review-stars{color:#f5b301;font-size:18px;letter-spacing:2px;line-height:1;}
+  .review-stars .off{color:var(--line);}
+  .review-quote{color:var(--ink);font-size:15.5px;line-height:1.65;margin:0;}
+  .review-quote::before{content:"\201C";}
+  .review-quote::after{content:"\201D";}
+  .review-who{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);}
+  .review-name{font-family:var(--font-display);font-weight:600;color:var(--ink);font-size:15px;}
+  .review-role{color:var(--muted);font-size:13px;margin-top:2px;}
+  .review-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+  .review-tag{font-size:11.5px;color:var(--muted);background:#eef3f8;border-radius:20px;padding:3px 10px;}
+  .reviews-note{text-align:center;color:var(--muted);font-size:12.5px;margin-top:28px;}
+
   @media (max-width:900px){
     .cards{grid-template-columns:1fr;}
     .ticket{grid-template-columns:1fr;}
@@ -468,6 +485,19 @@
   </div>
 </div>
 
+
+<section class="readers-section" id="reviews" hidden>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">What Readers Say</div>
+      <h2>From SAP Professionals Who Used the Guides</h2>
+      <p>Feedback from consultants and procurement leaders preparing for the Scenario-Based Assessment.</p>
+    </div>
+    <div class="reviews" id="reviews-list"></div>
+    <p class="reviews-note">Early readers received a complimentary copy in exchange for honest feedback.</p>
+  </div>
+</section>
+
 <section class="bundle-section" id="bundle">
   <div class="wrap">
     <div class="section-head">
@@ -527,5 +557,40 @@
   }
 </script>
 
+<script>
+/* ============================================================
+   WHAT READERS SAY
+   Add ONLY real feedback, with the person's permission.
+   The section stays hidden while this list is empty.
+   Fields:
+     quote   – their words (lightly edited for typos only)
+     name    – as they agreed to be shown (e.g. "Ana S.")
+     role    – e.g. "SAP Ariba Consultant, Deloitte"
+     rating  – the 1–5 score THEY gave (optional)
+     guide   – which guide they used
+     free    – true if they got the guide for free (shows disclosure)
+   ============================================================ */
+const READER_REVIEWS = [
+  // { quote: "...", name: "...", role: "...", rating: 5, guide: "Definitive Guide — 30 Scenarios", free: true },
+];
+
+(function renderReviews(){
+  const list = document.getElementById('reviews-list');
+  const section = document.getElementById('reviews');
+  if (!list || !section || READER_REVIEWS.length === 0) return;
+  const esc = t => String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  list.innerHTML = READER_REVIEWS.map(r => {
+    const n = Math.max(0, Math.min(5, Math.round(r.rating || 0)));
+    const stars = n ? '<div class="review-stars" aria-label="' + n + ' out of 5 stars">' + '★'.repeat(n) + '<span class="off">' + '★'.repeat(5-n) + '</span></div>' : '';
+    const tags = [r.guide ? esc(r.guide) : '', r.free ? 'Complimentary copy' : ''].filter(Boolean).map(t => '<span class="review-tag">' + t + '</span>').join('');
+    return '<article class="review">' + stars +
+      '<p class="review-quote">' + esc(r.quote) + '</p>' +
+      '<div class="review-who"><div class="review-name">' + esc(r.name) + '</div>' +
+      (r.role ? '<div class="review-role">' + esc(r.role) + '</div>' : '') +
+      (tags ? '<div class="review-meta">' + tags + '</div>' : '') + '</div></article>';
+  }).join('');
+  section.hidden = false;
+})();
+</script>
 </body>
 </html>
