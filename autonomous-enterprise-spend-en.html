@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google Analytics 4 with Consent Mode: analytics cookies only after the visitor accepts -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+var scnConsent=null;try{scnConsent=localStorage.getItem('scn_consent');}catch(e){}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:scnConsent==='granted'?'granted':'denied'});
+gtag('js',new Date());gtag('config','G-RCHRBWNEMW');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RCHRBWNEMW"></script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -570,6 +579,20 @@
       field.appendChild(s);
     }
   }
+</script>
+<div id="scn-consent" style="display:none;position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:640px;margin:0 auto;background:#050c17;color:#eaf3fa;border:1px solid rgba(150,190,225,.35);border-radius:12px;padding:16px 18px;font:14px/1.5 Inter,'Segoe UI',system-ui,sans-serif;box-shadow:0 8px 28px rgba(0,0,0,.35)">
+  <p style="margin:0 0 12px">We use analytics cookies (Google Analytics) to understand which content helps most. Is that OK?</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap">
+    <button type="button" data-c="granted" style="background:#3fa3e8;color:#04121f;border:0;border-radius:7px;padding:9px 18px;font-weight:600;cursor:pointer">Accept</button>
+    <button type="button" data-c="denied" style="background:transparent;color:#eaf3fa;border:1px solid rgba(150,190,225,.45);border-radius:7px;padding:9px 18px;font-weight:600;cursor:pointer">Decline</button>
+  </div>
+</div>
+<script>
+(function(){var b=document.getElementById('scn-consent');var s=null;try{s=localStorage.getItem('scn_consent');}catch(e){}
+if(s)return;b.style.display='block';
+b.addEventListener('click',function(e){var v=e.target.getAttribute&&e.target.getAttribute('data-c');if(!v)return;
+try{localStorage.setItem('scn_consent',v);}catch(e){}
+if(v==='granted')gtag('consent','update',{analytics_storage:'granted'});b.style.display='none';});})();
 </script>
 </body>
 </html>
