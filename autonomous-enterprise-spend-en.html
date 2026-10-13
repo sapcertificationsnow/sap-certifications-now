@@ -53,6 +53,21 @@ gtag('js',new Date());gtag('config','G-RCHRBWNEMW');
     "price": "39.00",
     "priceCurrency": "GBP",
     "availability": "https://schema.org/InStock",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "GBP" },
+      "shippingDestination": [{ "@type": "DefinedRegion", "addressCountry": "GB" }, { "@type": "DefinedRegion", "addressCountry": "IE" }, { "@type": "DefinedRegion", "addressCountry": "US" }, { "@type": "DefinedRegion", "addressCountry": "CA" }, { "@type": "DefinedRegion", "addressCountry": "AU" }, { "@type": "DefinedRegion", "addressCountry": "IN" }, { "@type": "DefinedRegion", "addressCountry": "DE" }, { "@type": "DefinedRegion", "addressCountry": "FR" }, { "@type": "DefinedRegion", "addressCountry": "NL" }, { "@type": "DefinedRegion", "addressCountry": "ES" }, { "@type": "DefinedRegion", "addressCountry": "IT" }, { "@type": "DefinedRegion", "addressCountry": "PT" }, { "@type": "DefinedRegion", "addressCountry": "BR" }],
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "DAY" },
+        "transitTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "DAY" }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": ["GB","IE","US","CA","AU","IN","DE","FR","NL","ES","IT","PT","BR"],
+      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+    },
     "url": "https://payhip.com/b/G5juT"
   }
 }
